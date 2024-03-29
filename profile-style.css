@@ -1,6 +1,8 @@
 
 html{
     overflow-x: hidden;
+    margin-left:0;
+    margin-bottom:0;
 }
 #profile-container {
     display: flex;
@@ -75,9 +77,6 @@ body {
     }
 }
 @media (max-width: 500px){
-    #home-button {
-        display: inline
-    }
     .buttons {
         display: none
     }
