@@ -5,24 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glimmers of Hope</title>
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-<link href='style.css' rel='stylesheet'>
-<div id="head">
-    <div class="header-left">
-        <a href="index.html"><img id="logo" src="logo.jpg" alt="Logo"></a>
-        <h1 id="navbar-title">Glimmers of Hope</h1>
-    </div>
-    <nav>
-      <a class="buttons" href="index.html#home">Home</a>
-      <a class="buttons" href="index.html#events">Upcoming Events</a>
-      <a class="buttons" href="index.html#team">Meet The Team</a>
-      <a class="buttons" href="index.html#contact">Contact Us</a>
-    </nav>
-</div>
 </head>
 
 
 <!------------------------ body of webpage ------------------------>
 <body>
+<div id="head">
+    <div class="header-left">
+        <a href="index.html"><img id="logo" src="logo.jpg" alt="Logo"></a>
+        <a href="index.html" style="text-decoration: none;"><h1 id="navbar-title" style="opacity: 100">Glimmers of Hope</h1></a>
+    </div>
+    <nav>
+        <a class="buttons" id="home-button" href="index.html#home">Home</a>
+        <a class="buttons" href="index.html#events">Upcoming Events</a>
+        <a class="buttons" href="index.html#team">Meet The Team</a>
+        <a class="buttons" href="index.html#contact">Contact Us</a>
+    </nav>
+</div>
+    
+
 <section id="profile-container">
   <div id="profile-photo">
     <img style="min-width: 400px;" src="michelle.png">
@@ -35,7 +36,7 @@
 </section>
 
 
-
+<link href='style.css' rel='stylesheet'>
 </body>
 <style>
 #profile-container {
@@ -43,8 +44,8 @@
             max-width: 960px;
             margin: 20px auto;
             padding: 20px;
-            height:76vh;
-            margin-top: 100px;
+            height:100vh;
+            margin-top: 25vh;
         }
 
         #profile-photo {
@@ -73,22 +74,42 @@
         }
 
   
-  body {
+        body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
         @media (max-width: 768px) {
-            #team-member {
+            #profile-container {
+                margin-top: 75px;
                 flex-direction: column;
             }
 
             #profile-photo, .profile-info {
                 flex: none;
-                max-width: 100%;
                 padding: 10px;
+                width:auto;
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+
+            #profile-photo img {
+                /* Adjust width of image to be responsive within the container */
+                width: 100%; /* Example percentage, adjust as necessary */
+                height: auto; /* Maintain aspect ratio */
             }
         }
+        @media (max-width: 500px){
+            #home-button {
+                display: inline
+            }
+            .buttons {
+                display: none
+            }
+        }
+        
 
 </style>
 
