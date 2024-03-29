@@ -1,11 +1,11 @@
 html, body {
-  width: 100%; /* Ensure the width spans the full viewport width */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
+  overflow-x: hidden;
   background-color: #70488D;
 }
 
 #head {
-  background: linear-gradient(to bottom, #DF98C8 0%, #70488D 100%);
+  background: linear-gradient(to bottom, #BC7FB6 0%, #70488D 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@ html, body {
 #navbar-title {
   color: #EEEEEE;
   opacity: 0; /* Start with the title invisible */
-  transition: opacity 0.15s ease-in-out; /* Smooth transition for the opacity change */
+  transition: opacity 0.15s ease-in-out; /* Smooth transition */
   font-family: Helvetica;
   margin: 0;
   font-size: 24px;
@@ -68,37 +68,22 @@ nav a:hover {
 }
 
 .container2 {
-        max-width: 1000px; /* Set the maximum width in pixels */
+        max-width: 1000px;
         margin: 0 auto; /* Center the container horizontally */
-        padding: 0 20px; /* Optional: Add padding for better readability */
+        padding: 0 20px; /* Padding for better readability */
         background-color:#70488D;
     }
 
-/* You may want to remove this part if it's not being used */
 #title-text {
   text-align: center;
   font-family: Helvetica;
   font-size: 70px;
   color: white;
   letter-spacing: 7px;
-  opacity: 100; /* Start with the title visible */
-  transition: opacity 0.15s ease-in-out; /* Smooth transition for the opacity change */
+  opacity: 100; /* Title is initially visible */
+  transition: opacity 0.15s ease-in-out; /* Smooth transition for the fade in and out */
 }
 
-/* Add this media query towards the end of your CSS file */
-@media (max-width: 768px) {
-  #title-text {
-    font-size: 50px; /* Smaller font size for small devices */
-    /* You can also adjust letter-spacing, padding, and other properties if needed */
-  }
-}
-
-/* You may want to add another media query for even smaller screens */
-@media (max-width: 480px) {
-  #title-text {
-    font-size: 40px; /* Even smaller font size for mobile phones */
-  }
-}
 
   .sunset {
     display: flex;
@@ -125,9 +110,9 @@ nav a:hover {
 
 .profile img {
   width: 150px;
-  height: 150px; /* Image size */
+  height: 150px;
   border-radius: 50%; /* Make the images round */
-  background-color: #c0e1fa; /* Placeholder color */
+  background-color: #c0e1fa;
 }
 
 .profile-name {
@@ -135,9 +120,9 @@ nav a:hover {
   font-size: 20px; /* Font size for the name */
 }
 
-.profile-social {
-  font-size: 16px; /* Font size for social media handle */
-  color: #AAAAAA; /* Color for social media handle */
+.profile-social { /* Social Media Handle */
+  font-size: 16px;
+  color: #AAAAAA;
 }
 
 .profile-name, .profile-social {
@@ -149,4 +134,17 @@ nav a:hover {
 .social-icon {
   width:55px;
   height:55px;
+}
+
+
+@media (max-width: 768px) {
+  #title-text {
+    font-size: 50px; /* Smaller font size for small devices */
+  }
+}
+
+@media (max-width: 480px) {
+  #title-text {
+    font-size: 40px; /* Even smaller font size for phones */
+  }
 }
