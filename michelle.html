@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glimmers of Hope</title>
+<title>Michelle - Glimmers of Hope</title>
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
 
 
 <!------------------------ body of webpage ------------------------>
 <body>
+<script src="script.js"></script>
 <link href='style.css' rel='stylesheet'>
 <link href='profile-style.css' rel='stylesheet'>
 
@@ -23,7 +24,16 @@
         <a class="buttons" href="index.html#events">Upcoming Events</a>
         <a class="buttons" href="index.html#team">Meet The Team</a>
         <a class="buttons" href="index.html#contact">Contact Us</a>
+        <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
     </nav>
+
+    <!-- Menu content -->
+    <div id="menu" onclick="toggleMenu()" class="menu-content">
+        <a href="index.html" class="menu-item common-font">Home</a>
+        <a href="index.html#events" class="menu-item common-font">Upcoming Events</a>
+        <a href="index.html#team" class="menu-item common-font">Meet The Team</a>
+        <a href="index.html#contact" class="menu-item common-font">Contact</a>
+    </div>
 </div>
     
 
@@ -31,10 +41,10 @@
   <div id="profile-photo">
     <img src="michelle.png">
   </div>
-  <div class="profile-info" style="margin-left:20px;margin-right:20px;">
-    <h2 style="font-family:Helvetica;font-size:40px; color:#EEE;">Michelle Matthew</h2>
-    <h3 style="color:#AAA";>Co-Founder</h3>
-    <p style="font-size:20px;color:#EEE;"><br>Michelle is a grade 10 student at Markville Secondary School. In her free time, Michelle likes to run for student body elections, watch TikTok, and sample different types of coffee.</p>
+  <div class="profile-info" style="margin-right:20px;">
+    <h2 class="common-font" style="font-size:40px; color:#EEE;">Michelle Matthew</h2>
+    <h3 class="common-font" style="color:#AAA";>Co-Founder</h3>
+    <p class="common-font" style="font-size:20px;color:#EEE;"><br>Michelle is a grade 10 student at Markville Secondary School. In her free time, Michelle likes to run for student body elections, watch TikTok, and sample different types of coffee.</p>
   </div>
 </section>
 
