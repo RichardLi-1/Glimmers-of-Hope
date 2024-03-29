@@ -1,106 +1,156 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glimmers of Hope</title>
-<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
-<link href='style.css' rel='stylesheet'>
-<div id="head">
-    <div class="header-left">
-        <img id="logo" src="logo.jpg" alt="Logo">
-        <h1 id="navbar-title">Glimmers of Hope</h1>
-    </div>
-    <nav>
-      <a class="buttons" href="#home">Home</a>
-      <a class="buttons" href="#events">Upcoming Events</a>
-      <a class="buttons" href="#team">Meet The Team</a>
-      <a class="buttons" href="#contact">Contact Us</a>
-    </nav>
-</div>
-</head>
-<script src="script.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var navbarTitle = document.getElementById('navbar-title');
-    var bigTitle = document.getElementById('title-text');
-    var scrollAmount = 320; // The amount of pixels scrolled after which to show the element
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > scrollAmount) {
-            navbarTitle.style.opacity = '1'; // Fade in
-            bigTitle.style.opacity = '0'; // Fade out
-        } else {
-            navbarTitle.style.opacity = '0'; // Fade out
-            bigTitle.style.opacity = '1'; // Fade in
-        }
-    });
-});
-</script>
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #70488D;
+}
+
+#head {
+  background: linear-gradient(to bottom, #BC7FB6 0%, #70488D 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 10%;
+  margin-right: 15px;
+}
+
+#navbar-title {
+  color: #EEEEEE;
+  opacity: 0; /* Start with the title invisible */
+  transition: opacity 0.15s ease-in-out; /* Smooth transition */
+  font-family: Helvetica;
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #666666;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  color: #EEEEEE;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+/*----------------------Sunset Photo and Below---------------------*/
+
+.page-text{
+  font-family:Helvetica;
+  margin-left:5px;
+  color:#DFDFDF;
+}
+
+.container2 {
+        max-width: 1000px;
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 0 20px; /* Padding for better readability */
+        background-color:#70488D;
+    }
+
+#title-text {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 7px;
+  opacity: 100; /* Title is initially visible */
+  transition: opacity 0.15s ease-in-out; /* Smooth transition for the fade in and out */
+}
 
 
-<!------------------------ body of webpage ------------------------>
-<body>
-    <div class="sunset" id="home">
-        <h2 id="title-text">GLIMMERS OF HOPE</h2>
-    </div>
-    <div class="container2">
-	<!--about me-->
-	<div id="about" style="background-color:#70488D; margin-left:50px; margin-right:50px">
-		<h2 style="font-family:Helvetica;margin-left:5px;text-align:center;color:white"><br>Who Are We?</h2>
-		<p class="page-text">Glimmers of Hope is a youth-led non-profit organization based in Markham, Ontario.</p>
-        <h3 class="page-text">Our Mission</h3>
-        <p class="page-text"">During and after the COVID-19 pandemic, we have found that many youth in our community have been struggling with their mental health, many of which are unable to attend school. In addition, many are unable to access or afford support and many families are uneducated or hold stigmas against mental health. Glimmers of Hope was created to tackle these challenges by providing tailored support to youth in our community. Through fundraising events and educational opportunities, we aim to destigmatize mental health issues and provide youth with the tools and resources they need to cope with the challenges they are facing. We also aim to assist youth with their educational journey by providing local volunteer opportunities to fulfill their OSSD. <br><br></p>
+  .sunset {
+    display: flex;
+    height: 72vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url('tree.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed; /* This can be removed if the parallax effect is purely JavaScript driven */
+  }
 
-	</div>
+/*----------------------Meet The Team----------------------*/
+.team-section {
+  text-align: center;
+  margin: 50px 0; /* Space around the section */
+}
 
-	<!------upcoming events------>
-    <div id="events" style="background-color:#70488D; margin-left:50px; margin-right:50px">
-	<h2 class="page-text" style="text-align:center;">Upcoming Events</h2>
-	<p class="page-text">No upcoming events. Follow our social media so you don’t miss any updates!</p>
-	</div>
+.profile {
+  display: inline-block; /* Profiles side by side */
+  margin: 0 20px; /* Space between profiles */
+}
 
-		<!--reflections-->
-		<div id="team" style="background-color:#70488D; margin-left:50px; margin-right:50px;">
-			
-			<title>Meet the Team</title>
-</head>
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make the images round */
+  background-color: #c0e1fa;
+}
 
-<div class="team-section">
-    <h2 class="page-text" style="font-weight:900;text-align:center;">Meet the Executives</h2>
-    <div class="profile">
-        <a href="richard.html"><img src="richard.png" alt="Profile Picture of Team Member"></a>
-        <div class="profile-name page-text">Richard Li</div>
-        <div class="profile-social">@_transitfanner</div>
-    </div>
-    <div class="profile">
-        <a href="michelle.html"><img src="michelle.png" alt="Profile Picture of Michelle Matthew"></a>
-        <div class="profile-name page-text">Michelle Matthew</div>
-        <div class="profile-social">@miichelle.jm</div>
-    </div>
-</div>
-		</div>
-	
-    		<!--reflections-->
-		<div id="contact" style="background-color:#70488D; margin-left:50px; margin-right:50px;">
-			<h2 class="page-text" style="margin-left:5px;margin-right:5px;text-align:center;">Contact Us</h2>
-			<p class="page-text">
-				richardli0@outlook.com<br><br>
-                <a href="https://www.linkedin.com/company/100954304" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="linkedin.png"></a>
-                <a href="https://www.instagram.com/glimmerssofhope/" target="_blank" rel="noopener noreferrer"><img class="social-icon" src="insta.png"></a>
-				<!--<img src="" width="240" height="135" alt="A poster outlining ergonomic tips."> -->
-				<!--<em><a href="spreadsheets.html"></a></em> -->
-			</p>
-		</div>
-    </div>
-</body>
+.profile-name {
+  margin-top: 10px; /* Space between image and name */
+  font-size: 20px; /* Font size for the name */
+}
+
+.profile-social { /* Social Media Handle */
+  font-size: 16px;
+  color: #AAAAAA;
+}
+
+.profile-name, .profile-social {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px
+}
+
+/*----------------------Contact Us----------------------*/
+.social-icon {
+  width:55px;
+  height:55px;
+}
 
 
-</html>
-<!------------------------ footer ------------------------>
-<!---<footer style="background-color:#FFFFFF; margin-left:20px; margin-right:20px; margin-top:30px; margin-bottom:30px; font-family:Segoe UI;">
-	<br>
-	<h5 style="margin-left:30px;margin-top:3px;margin-bottom:3px"><em> Glimmers of Hope </em>
-	🏳‍</h5>
-	<br>
-</footer>
+@media (max-width: 768px) {
+  #title-text {
+    font-size: 50px; /* Smaller font size for small devices */
+  }
+}
+
+@media (max-width: 480px) {
+  #title-text {
+    font-size: 40px; /* Even smaller font size for phones */
+  }
+  #home-button {
+    display: inline
+  }
+  .buttons {
+      display: none
+  }
+}
