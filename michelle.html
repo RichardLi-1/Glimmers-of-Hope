@@ -10,6 +10,9 @@
 
 <!------------------------ body of webpage ------------------------>
 <body>
+<link href='style.css' rel='stylesheet'>
+<link href='profile-style.css' rel='stylesheet'>
+
 <div id="head">
     <div class="header-left">
         <a href="index.html"><img id="logo" src="logo.jpg" alt="Logo"></a>
@@ -28,105 +31,15 @@
   <div id="profile-photo">
     <img src="michelle.png">
   </div>
-  <div class="profile-info">
-    <h2 style="font-family:Helvetica;font-size:40px; color:#EEE;margin-left:20px;">Michelle Matthew</h2>
-    <h3 style="color:#AAA; margin-left:20px;">Co-Founder</h3>
-    <p class="page-text" style="font-size:20px;margin:20px;"><br>Michelle is a grade 10 student at Markville Secondary School. In her free time, Michelle likes to run for student body elections, watch TikTok, and sample different types of coffee.</p>
+  <div class="profile-info" style="margin-left:20px;margin-right:20px;">
+    <h2 style="font-family:Helvetica;font-size:40px; color:#EEE;">Michelle Matthew</h2>
+    <h3 style="color:#AAA";>Co-Founder</h3>
+    <p style="font-size:20px;color:#EEE;"><br>Michelle is a grade 10 student at Markville Secondary School. In her free time, Michelle likes to run for student body elections, watch TikTok, and sample different types of coffee.</p>
   </div>
 </section>
 
-
-<link href='style.css' rel='stylesheet'>
 </body>
-<style>
-
-html{
-    overflow-x: hidden;
-}
-#profile-container {
-            display: flex;
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            height:auto;
-            margin-top: 25vh;
-        }
-
-        #profile-photo {
-            flex: 1;
-            padding: 10px;
-        }
-
-        #profile-photo img {
-            width: 100%; /* Make the image responsive */
-            height: auto;
-            border-radius: 10px;
-        }
-
-        #profile-info {
-            flex: 2;
-            padding: 10px;
-        }
-
-        #profile-info h2, #profile-info h3 {
-            margin: 0;
-            color: #333;
-        }
-
-        #profile-info p {
-            color: #666;
-        }
-
-  
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        @media (min-width: 768px){
-            #profile-photo{
-                min-width: 400px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #profile-container {
-                margin-top: 50px;
-                flex-direction: column;
-            }
-
-            #profile-photo, .profile-info {
-                flex: none;
-                padding: 10px;
-                width:auto;
-            }
-
-            .profile-info {
-                text-align: center;
-            }
-
-            #profile-photo img {
-                /* Adjust width of image to be responsive within the container */
-                width: 100%; /* Example percentage, adjust as necessary */
-                height: auto; /* Maintain aspect ratio */
-            }
-        }
-        @media (max-width: 500px){
-            #home-button {
-                display: inline
-            }
-            .buttons {
-                display: none
-            }
-        }
-        
-
-</style>
-
 </html>
-
-
 
 <!------------------------ footer ------------------------>
 <!---<footer style="background-color:#FFFFFF; margin-left:20px; margin-right:20px; margin-top:30px; margin-bottom:30px; font-family:Segoe UI;">
