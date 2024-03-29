@@ -147,4 +147,10 @@ nav a:hover {
   #title-text {
     font-size: 40px; /* Even smaller font size for phones */
   }
+  #home-button {
+    display: inline
+  }
+  .buttons {
+      display: none
+  }
 }
