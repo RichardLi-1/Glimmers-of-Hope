@@ -39,12 +39,16 @@
 <link href='style.css' rel='stylesheet'>
 </body>
 <style>
+
+html{
+    overflow-x: hidden;
+}
 #profile-container {
             display: flex;
             max-width: 960px;
             margin: 20px auto;
             padding: 20px;
-            height:100vh;
+            height:auto;
             margin-top: 25vh;
         }
 
@@ -81,7 +85,7 @@
         }
         @media (max-width: 768px) {
             #profile-container {
-                margin-top: 75px;
+                margin-top: 50px;
                 flex-direction: column;
             }
 
@@ -89,6 +93,7 @@
                 flex: none;
                 padding: 10px;
                 width:auto;
+                min-width:22vw
             }
 
             .profile-info {
