@@ -101,7 +101,7 @@ nav a:hover {
     background-image: url('tree.jpeg');
     background-size: cover;
     background-position: top;
-    background-attachment: fixed; /* This can be removed if the parallax effect is purely JavaScript driven */
+    background-attachment: fixed; /* can be removed once the parallax effect is purely JavaScript driven */
   }
 
 /*----------------------Meet The Team----------------------*/
@@ -135,6 +135,10 @@ nav a:hover {
 .profile-name, .profile-social {
   font-family: 'Raleway', sans-serif;
   font-size: 16px
+}
+
+.profile a:hover{
+  filter: brightness(90%);
 }
 
 /*----------------------Contact Us----------------------*/
@@ -221,7 +225,6 @@ nav a:hover {
   }
 }
 
-/* Apply the animation to menu items with a staggered delay */
 .show .menu-item {
   animation: fadeIn 0.5s ease forwards;
 }
