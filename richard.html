@@ -7,6 +7,12 @@
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 </head>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function() {
+        $("#head").load("header.html");
+    });
+</script>
 
 <!------------------------ body of webpage ------------------------>
 <body>
@@ -15,26 +21,7 @@
 <link href='profile-style.css' rel='stylesheet'>
     
 <div id="head">
-    <div class="header-left">
-        <a href="index.html"><img id="logo" src="logo.jpg" alt="Logo"></a>
-        <a href="index.html" style="text-decoration: none;"><h1 id="navbar-title" style="opacity: 100">Glimmers of Hope</h1></a>
-    </div>
-    <nav>
-        <a class="buttons" href="index.html#home">Home</a>
-        <a class="buttons" href="index.html#events">Upcoming Events</a>
-        <a class="buttons" href="index.html#team">Meet The Team</a>
-        <a class="buttons" href="index.html#contact">Contact Us</a>
-        <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
-        </nav>
-    </div>
-
-    <!-- Menu content -->
-    <div id="menu" onclick="toggleMenu()" class="menu-content">
-        <a href="index.html" class="menu-item common-font">Home</a>
-        <a href="index.html#events" class="menu-item common-font">Upcoming Events</a>
-        <a href="index.html#team" class="menu-item common-font">Meet The Team</a>
-        <a href="index.html#contact" class="menu-item common-font">Contact</a>
-    </div>
+    
 </div>
 
 
@@ -51,7 +38,7 @@
 
 </body>
 <footer id="includeHtml"></footer>
-
+<br><br><br>
 </html>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
