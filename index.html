@@ -64,12 +64,12 @@
                 <div class="profile" style="margin-bottom:20px">
                     <a href="richard.html"><img src="richard.png" alt="Profile Picture of Team Member"></a>
                     <div class="profile-name page-text">Richard Li</div>
-                    <div class="profile-social">@_transitfanner</div>
+                    <div class="profile-social"><a href="https://www.instagram.com/_transitfanner" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:#AAAAAA">@_transitfanner</a></div>
                 </div>
                 <div class="profile">
                     <a href="michelle.html"><img src="michelle.png" alt="Profile Picture of Michelle Matthew"></a>
                     <div class="profile-name page-text">Michelle Matthew</div>
-                    <div class="profile-social">@miichelle.jm</div>
+                    <div class="profile-social"><a href="https://www.instagram.com/miichelle.jm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:#AAAAAA">@miichelle.jm</a></div>
                 </div>
             </div>
         </div>
@@ -88,32 +88,10 @@
 
 
 </html>
-<!------------------------ footer ------------------------>
-<footer style="background-color:#5B3A73; font-family:Helvetica;">
-	<br><br>
-	<h4 class="page-text common-font" style="text-align:center;"><em>Glimmers of Hope 2024</em></h4>
-    <div class="social-media-icons" style="margin-top: 20px;">
-        <a href="https://www.linkedin.com/company/100954304" target="_blank" rel="noopener noreferrer">
-            <img class="social-icon" src="linkedin.jpeg" alt="LinkedIn" style="min-height:65px;min-width:65px;">
-        </a>
-        <a href="https://www.instagram.com/glimmerssofhope/" target="_blank" rel="noopener noreferrer">
-            <img class="social-icon" src="instagram.png" alt="Instagram">
-        </a>
-    </div>
-    <br><br>
-</footer>
 
-<style>
-    .social-media-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-
-    .social-icon:hover{
-        filter: brightness(80%);
-    }
-
-</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function() {
+        $("#includeHtml").load("footer.html");
+    });
+</script>
