@@ -125,6 +125,7 @@ nav a:hover {
   height: 150px;
   border-radius: 50%; /* Make the images round */
   background-color: #c0e1fa;
+  object-fit: cover
 }
 
 .profile-name {
