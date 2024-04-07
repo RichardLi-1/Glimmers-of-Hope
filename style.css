@@ -7,6 +7,12 @@ html, body {
   background-color: #70488D;
 }
 
+@media (prefers-color-scheme: light) {
+  html, body {
+      background-color: #FCFCFC;
+  }
+}
+
 .common-font {
   font-family:Raleway
 }
@@ -23,6 +29,12 @@ html, body {
   left: 0;
   z-index: 10;
   box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light){
+  #head{
+    background:#DDD;
+  }
 }
 
 .header-left {
@@ -73,12 +85,24 @@ nav a:hover {
   color:#E0E0E0;
 }
 
+@media (prefers-color-scheme: light) {
+  .page-text {
+      color: #111111;
+  }
+}
+
 .container2 {
         max-width: 1000px;
         margin: 0 auto; /* Center the container horizontally */
         padding: 0 20px; /* Padding for better readability */
         background-color:#70488D;
     }
+
+@media (prefers-color-scheme: light) {
+  .container2 {
+      background-color: #FCFCFC;
+  }
+}
 
 #title-text {
   text-align: center;
@@ -104,9 +128,21 @@ nav a:hover {
     background-attachment: fixed; /* can be removed once the parallax effect is purely JavaScript driven */
   }
 
+  @media (prefers-color-scheme: light) {
+    .sunset {
+      filter: brightness(115%);
+    }
+  }
+
 .headers {
   text-align:center;
   color:white;
+}
+
+@media (prefers-color-scheme: light){
+  .headers {
+    color:black;
+  }
 }
 
 /*----------------------Meet The Team----------------------*/
