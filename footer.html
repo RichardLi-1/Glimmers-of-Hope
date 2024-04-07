@@ -9,9 +9,8 @@
 </head>
 
 
-
 <!------------------------ footer ------------------------>
-<footer style="background-color:#5B3A73; font-family:Helvetica;">
+<footer>
 	<br><br>
 	<h4 class="page-text common-font" style="text-align:center;"><em>Glimmers of Hope 2024</em></h4>
     <div class="social-media-icons" style="margin-top: 20px;">
@@ -27,6 +26,11 @@
 </html>
 
 <style>
+    footer {
+        background-color:#5B3A73;
+        font-family:Helvetica;
+    }
+
     .social-media-icons {
         display: flex;
         justify-content: center;
@@ -37,8 +41,17 @@
         filter: brightness(80%);
     }
 
-    .profile a:hover{
-        filter: brightness(90%);
+    @media (prefers-color-scheme: light){
+        footer {
+            background-color:#DDDDDD;
+        }
+        .social-icon {
+            filter: brightness(0%);
+        }
+
+        .social-icon:hover {
+            filter: brightness(40%);
+        }
     }
 
 </style>
