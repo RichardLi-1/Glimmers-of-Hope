@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glimmers of Hope</title>
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+<link href='style.css' rel='stylesheet'>
+</head>
+
+<!------------------------ body of webpage ------------------------>
+<body>
+    <div id="head">
+        <div class="header-left">
+            <img id="logo" src="logo.jpg" alt="Logo">
+            <h1 id="navbar-title">Blog</h1>
+        </div>
+        <nav>
+            <a class="buttons" href="index.html">Home</a>
+            <a class="buttons" href="index.html#events">Upcoming Events</a>
+            <a class="buttons" href="blog.html">Blog</a>
+            <a class="buttons" href="resources.html">Resources</a>
+            <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
+          </nav>
+      </div>
+  
+      <!-- Menu content -->
+      <div id="menu" onclick="toggleMenu()" class="menu-content">
+          <a href="index.html" class="menu-item common-font">Home</a>
+          <a href="index.html#events" class="menu-item common-font">Upcoming Events</a>
+          <a href="blog.html" class="menu-item common-font">Blog</a>
+          <a href="resources.html" class="menu-item common-font">Resources</a>
+      </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- Top Image Area -->
+    <div class="sunset" id="home">
+        <h2 id="title-text">BLOG</h2>
+    </div>
+    <div class="container2">
+        <!--Who are we?-->
+        <div id="about">
+            <h1 class="common-font headers"><br>Recent Posts</h1>
+            <p class="page-text" style="font-size:18px">No Posts Yet</p>
+    </div>
+</body>
+
+<footer id="includeHtml"></footer>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function() {
+        $("#includeHtml").load("footer.html");
+    });
+</script>
