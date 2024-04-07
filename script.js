@@ -1,7 +1,8 @@
 console.log("from script file");
 
 var head = document.getElementById('head');
-head.style.background = 'rgba(255, 165, 0, 000)';
+var buttons = document.getElementsByClassName('buttons');
+head.style.background = 'rgba(255, 165, 0, 0)';
 
 document.addEventListener('scroll', function() {
     var scrolled = window.pageYOffset;
@@ -16,14 +17,28 @@ document.addEventListener("DOMContentLoaded", function() {
     var scrollAmount = 320; // The amount of pixels scrolled after which to show the element
     
     window.addEventListener('scroll', function() {
-        if (window.scrollY > scrollAmount) { //Scroll down
+        //---------------Scroll Down---------------//
+        if (window.scrollY > scrollAmount) {
             navbarTitle.style.opacity = '1'; // Fade in
             bigTitle.style.opacity = '0'; // Fade out
-            head.style.background = 'linear-gradient(to bottom, #BC7FB6 0%, #70488D 100%)';
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                // The device is set to light mode
+                head.style.background = '#DDDDDD';
+                Array.from(buttons).forEach(function(button) {
+                    button.style.color = '#111111';
+                });
+            } else {
+                // The device is set to dark mode or has no preference)
+                head.style.background = 'linear-gradient(to bottom, #BC7FB6 0%, #70488D 100%)';
+            }
+        //----------------Scroll Up----------------//
         } else { //Scroll up
             navbarTitle.style.opacity = '0'; // Fade out
             bigTitle.style.opacity = '1'; // Fade in
-            head.style.background = 'rgba(255, 165, 0, 000)';
+            head.style.background = 'rgba(255, 165, 0, 0)';
+            Array.from(buttons).forEach(function(button) {
+                button.style.color = '#EEEEEE';
+            });
         }
     });
 });
