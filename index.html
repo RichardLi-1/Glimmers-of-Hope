@@ -6,6 +6,7 @@
 <title>Glimmers of Hope</title>
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 <link href='style.css' rel='stylesheet'>
+<link href='profile-style.css' rel='stylesheet'>
 </head>
 
 <!------------------------ body of webpage ------------------------>
@@ -18,8 +19,8 @@
         <nav>
           <a class="buttons" href="#home">Home</a>
           <a class="buttons" href="#events">Upcoming Events</a>
-          <a class="buttons" href="#team">Meet The Team</a>
-          <a class="buttons" href="#contact">Contact Us</a>
+          <a class="buttons" href="blog.html">Blog</a>
+          <a class="buttons" href="resources.html">Resources</a>
           <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
         </nav>
     </div>
@@ -28,8 +29,8 @@
     <div id="menu" onclick="toggleMenu()" class="menu-content">
         <a href="#home" class="menu-item common-font">Home</a>
         <a href="#events" class="menu-item common-font">Upcoming Events</a>
-        <a href="#team" class="menu-item common-font">Meet The Team</a>
-        <a href="#contact" class="menu-item common-font">Contact</a>
+        <a href="blog.html" class="menu-item common-font">Blog</a>
+        <a href="resources.html" class="menu-item common-font">Resources</a>
     </div>
 
 
@@ -52,8 +53,19 @@
         <!------upcoming events------>
         <div id="events">
             <h1 class="common-font headers">Upcoming Events</h1>
-            <p class="page-text" style="font-size:18px">No upcoming events. Follow our social media so you don’t miss any updates!</p>
+            <p class="page-text" style="font-size:18px">Follow our social media so you don’t miss any updates!</p>
         </div>
+
+        <section id="profile-container" style="margin-top:0px;">
+            <div id="profile-photo">
+              <img src="market.jpeg">
+            </div>
+            <div class="profile-info" style="margin-right:20px;">
+              <a src="https://www.360kids.ca/"><h2 class = "common-font" style=" color:#EEE;">Markham Village Farmers Market</h2></a>
+              <p class="common-font" style="color:#AAA;">July-September 2024<br>132 Robinson Street</p>
+              <p class="page-text" style="color:#EEE;"><br>Find Glimmers of Hope at the Markham Village Farmers Market this summer!</p>
+            </div>
+        </section>
 
         <!-----meet the team----->
         <div id="team">
