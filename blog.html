@@ -6,6 +6,7 @@
 <title>Glimmers of Hope</title>
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 <link href='style.css' rel='stylesheet'>
+<link href='profile-style.css' rel='stylesheet'>
 </head>
 
 <!------------------------ body of webpage ------------------------>
@@ -17,7 +18,7 @@
         </div>
         <nav>
             <a class="buttons" href="index.html">Home</a>
-            <a class="buttons" href="index.html#events">Upcoming Events</a>
+            <a class="buttons" href="events.html">Events</a>
             <a class="buttons" href="blog.html" style="text-decoration-line:underline;">Blog</a>
             <a class="buttons" href="resources.html"">Resources</a>
             <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
@@ -27,7 +28,7 @@
       <!-- Menu content -->
       <div id="menu" onclick="toggleMenu()" class="menu-content">
           <a href="index.html" class="menu-item common-font">Home</a>
-          <a href="index.html#events" class="menu-item common-font">Upcoming Events</a>
+          <a href="events.html" class="menu-item common-font">Events</a>
           <a href="blog.html" class="menu-item common-font">Blog</a>
           <a href="resources.html" class="menu-item common-font">Resources</a>
       </div>
@@ -43,8 +44,18 @@
         <!--Who are we?-->
         <div id="about">
             <h1 class="common-font headers"><br>Recent Posts</h1>
-            <p class="page-text" style="font-size:18px">No Posts Yet</p>
     </div>
+
+    <section id="profile-container" style="margin-top:0px;">
+        <div id="profile-photo">
+          <img src="mvmf.jpeg">
+        </div>
+        <div class="profile-info" style="margin-right:20px;">
+          <h2 class = "common-font profile-text">How Neurodivergent People are Condemned</h2>
+          <p class="common-font" style="color:#AAA;">April 9, 2024</p>
+          <p class="page-text profile-text"><br>Description</p>
+        </div>
+    </section>
 </body>
 
 <footer id="includeHtml"></footer>
