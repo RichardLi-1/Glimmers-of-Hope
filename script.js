@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // The device is set to light mode
                 head.style.background = '#DDDDDD';
                 Array.from(buttons).forEach(function(button) {
-                    button.style.color = '#111111';
+                    button.style.filter = 'brightness(5%)';
                 });
             } else {
                 // The device is set to dark mode or has no preference)
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             bigTitle.style.opacity = '1'; // Fade in
             head.style.background = 'rgba(255, 165, 0, 0)';
             Array.from(buttons).forEach(function(button) {
-                button.style.color = '#EEEEEE';
+                button.style.filter = 'brightness(100%)';
             });
         }
     });
