@@ -4,12 +4,12 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   margin:0;
-  background-color: #70488D;
+  background-color: #FCFCFC;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   html, body {
-      background-color: #FCFCFC;
+      background-color: #111111;
   }
 }
 
@@ -124,7 +124,6 @@ nav a:hover {
         max-width: 1000px;
         margin: 0 auto; /* Center the container horizontally */
         padding: 0 20px; /* Padding for better readability */
-        background-color:#70488D;
     }
 
 @media (prefers-color-scheme: light) {
